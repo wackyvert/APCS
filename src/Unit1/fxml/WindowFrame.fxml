@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Unit1.fxml.WindowFrame">
+   <children>
+      <TextField fx:id="lengthInput" layoutX="40.0" layoutY="72.0" promptText="Length" />
+      <CheckBox fx:id="fancyButton" layoutX="207.0" layoutY="35.0" mnemonicParsing="false" text="Fancy" />
+      <CheckBox fx:id="crownButton" layoutX="207.0" layoutY="70.0" mnemonicParsing="false" text="Crowns" />
+      <TextField fx:id="widthInput" layoutX="40.0" layoutY="108.0" promptText="Width" />
+      <ColorPicker fx:id="colorPicker" layoutX="39.0" layoutY="31.0" prefHeight="26.0" prefWidth="149.0" />
+      <TextArea fx:id="output" editable="false" layoutX="39.0" layoutY="160.0" prefHeight="188.0" prefWidth="501.0" />
+      <Text layoutX="290.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Picture Frame Maker 9000">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+      </Text>
+      <Button fx:id="createButton" layoutX="361.0" layoutY="85.0" mnemonicParsing="false" onAction="#createPictureFrame" text="Create" />
+   </children>
+</AnchorPane>
