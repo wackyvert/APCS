@@ -39,11 +39,18 @@ public class WindowFrame {
         }
         else
         {
-            frameCost = totalArea * 0.25;
+            frameCost = totalArea * 0.15;
         }
         glassCost = totalArea * 0.07;
         cardboardCost = totalArea * 0.02;
-        totalCost = glassCost + cardboardCost + frameCost;
+        if (crownButton.isSelected())
+        {
+            totalCost = glassCost + cardboardCost + frameCost + 1.4;
+        }
+        else
+        {
+            totalCost = glassCost + cardboardCost + frameCost;
+        }
         output.setText("Total Cost Of a "+hexColor+" Frame: $"+df.format(frameCost)+"" +
                 "\n Total Cost Of Glass: $"+df.format(glassCost)+
                 "\n Total Cost Of Cardboard: $"+df.format(cardboardCost)+
