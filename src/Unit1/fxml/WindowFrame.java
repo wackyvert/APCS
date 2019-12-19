@@ -26,6 +26,7 @@ public class WindowFrame {
     double glassCost;
     double cardboardCost;
     double totalCost;
+    double paintCost;
     DecimalFormat df = new DecimalFormat("0.00");
 
     public void createPictureFrame(){
