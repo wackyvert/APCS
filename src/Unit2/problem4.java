@@ -1,37 +1,20 @@
 package Unit2;
 
 public class problem4 {
-    public static boolean check(int n) {
-        if (n < 100000) {
-            String digits = String.valueOf(n);
-            if (digits.substring(0).equals(digits.substring(4))) {
-                if (digits.substring(1).equals(3)) {
-                    return true;
-
-                }
-            }
-        }
-        else if (n>100000){
-                String digits = String.valueOf(n);
-                if (digits.substring(0).equals(digits.substring(5))) {
-                    if (digits.substring(1).equals(4)) {
-                        if (digits.substring(2).equals(3)){
-                            return true;
-                        }
-
-                    }
-                }
-            }
-
-    return false;
-    }
-
     public static void main(String args[]){
-        for (int i=1111; i<998002; i++){
-            if (check(i)){
-                System.out.println("Palindrome: "+i);
-            }
+        String s1 = "ABCDEFGHI";
 
-        }
+        String s2 = s1.substring(6, 7);
+
+        String s3 = new String("abcdefghi");
+
+        String s4 = s3.substring(4, 5);
+
+        String s5 = s3.substring(2, 3);
+
+        System.out.print(s2 + s4 + s5);
+
+        Double d1 = 3.0;
+
     }
 }

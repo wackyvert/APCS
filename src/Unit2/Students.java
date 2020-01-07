@@ -28,9 +28,7 @@ public class Students {
      this.test3=test3;
     }
 
-    public String toString(String string) {
-        return
-    }
+
 
     public String getName(){
         return firstName+" "+lastName;
