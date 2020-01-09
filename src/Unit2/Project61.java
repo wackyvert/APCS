@@ -15,7 +15,8 @@ public class Project61 {
         int number = num_gen.nextInt(101);
         while (guess == false) {
             System.out.println("Guess a number between 0 and 100");
-            try{ double userIn = input.nextDouble();
+            try {
+                double userIn = input.nextDouble();
                 if (userIn > number) {
                     System.out.println("Sorry, that number is too high! Try again...");
                 } else if (userIn < number) {
@@ -23,8 +24,8 @@ public class Project61 {
                 } else {
                     guess = true;
                     System.out.println("Good job!");
-                }}
-            catch (InputMismatchException e){
+                }
+            } catch (InputMismatchException e) {
                 System.out.println("That's not a number!");
             }
 
