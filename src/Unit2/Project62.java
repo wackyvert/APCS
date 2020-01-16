@@ -7,6 +7,9 @@ public class Project62 {
     public static int userIN;
     public static boolean checkGuess;
     public static int compRandom;
+    public static int guessNum=0;
+    public static int max = 100;
+    public static int min = 1;
     public static void main(String args[]) {
 
 
@@ -14,20 +17,21 @@ public class Project62 {
 
         Scanner input = new Scanner(System.in);
         userIN = input.nextInt();
-        long startTime = System.nanoTime();
-        while (compRandom != userIN){
+        while (compRandom != userIN && guessNum <=6){
             compRandom = randomInBounds();
         System.out.println("Number guessed: "+compRandom);
+        guessNum++;
         }
-        System.out.println("Number guessed correctly! Your number was: " +compRandom);
-        long endTime = System.nanoTime();
-
-        long duration = (endTime - startTime)/100000000;
-        System.out.println("Number successfuly guessed in "+duration+" seconds");
+        if(compRandom==userIN) {
+            System.out.println("Number guessed correctly! Your number was: " + compRandom);
+        }
+        else if (guessNum>6){
+            System.out.println("You win!");
+        }
     }
         public static int randomInBounds(){
         Random generate = new Random();
-        int num = generate.nextInt(101);
+        int num = generate.nextInt(max) + min;
         return num;
         }
 
