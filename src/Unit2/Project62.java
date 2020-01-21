@@ -19,7 +19,13 @@ public class Project62 {
         userIN = input.nextInt();
         while (compRandom != userIN && guessNum <=6){
             compRandom = randomInBounds();
-        System.out.println("Number guessed: "+compRandom);
+            System.out.println("Number guessed: "+compRandom);
+            System.out.println("Was it higher or lower?");
+        String b = input.nextLine();
+        if(b.equalsIgnoreCase("higher")){
+            min=compRandom;
+        }
+        else{max=compRandom;}
         guessNum++;
         }
         if(compRandom==userIN) {
