@@ -18,4 +18,10 @@ public class Style4_practice {
     public static double getPerimiter(double base, double height){
         return base+base+height+height;
     }
+    public static double square(int in){
+        return Math.pow(in, 2);
+    }
+    public static double cube(int in){
+        return Math.pow(in, 3);
+    }
 }
