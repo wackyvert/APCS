@@ -16,7 +16,7 @@ public class Dice {
     public int roll(){
 
         Random roll = new Random();
-        int numRolled = roll.nextInt(sides);
+        int numRolled = roll.nextInt(sides)+1;
         return numRolled;
     }
     public void changeNumOfSides(int input){
